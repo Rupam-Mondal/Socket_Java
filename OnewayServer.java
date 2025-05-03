@@ -7,6 +7,7 @@ public class OnewayServer{
         ServerSocket ss = new ServerSocket(4000);
         System.out.println("Server is running");
         Socket socket = ss.accept();
+        
 
         BufferedReader in_socket = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 

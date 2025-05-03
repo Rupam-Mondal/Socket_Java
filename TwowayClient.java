@@ -5,6 +5,7 @@ import java.io.*;
 public class TwowayClient {
     public TwowayClient() throws Exception{
         Socket socket = new Socket("localhost" , 3000);
+        
         Scanner sc = new Scanner(System.in);
         BufferedReader in_socket = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter out_socket = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));

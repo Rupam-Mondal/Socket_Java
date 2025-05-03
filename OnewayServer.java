@@ -4,7 +4,7 @@ import java.io.*;
 
 public class OnewayServer{
     public OnewayServer() throws Exception{
-        ServerSocket ss = new ServerSocket(3000);
+        ServerSocket ss = new ServerSocket(4000);
         System.out.println("Server is running");
         Socket socket = ss.accept();
 
